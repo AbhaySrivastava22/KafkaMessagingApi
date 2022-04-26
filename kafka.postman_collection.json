@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "af1cf1cd-9d6b-4ef6-b7ba-0ea8ad6bec5e",
+		"name": "kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "kafkanewchatrequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"messageSenderName\": \"messageSenderName\",\r\n\"messageRecieverName\": \"messageRecieverName\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kafkamessagingapi/v1/messages/startnewchat/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kafkamessagingapi",
+						"v1",
+						"messages",
+						"startnewchat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafkamssgrequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"message\": \"Hi,Nice to Meet You\",\r\n\"messageSenderName\": \"messageSenderName\",\r\n\"messageRecieverName\": \"messageRecieverName\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kafkamessagingapi/v1/messages/getmessage/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kafkamessagingapi",
+						"v1",
+						"messages",
+						"getmessage",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
