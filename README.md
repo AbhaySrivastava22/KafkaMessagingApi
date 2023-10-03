@@ -1,6 +1,6 @@
 # KafkaMessagingApi
 This project is a Spring Boot with Apache Kafka Project.
-This project demonstrates the kafka producer and comsumer messaging service.
+This project demonstrates the kafka producer and comsumer messaging service in which one user sends message to another and in response another user can send message to the same user.
 
 #Steps to Start The Project :
 1.Clone and open project in any java IDE like Intellij
